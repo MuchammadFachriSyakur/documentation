@@ -74,18 +74,26 @@ main .summary {
   box-sizing: border-box;
   width: 75%;
   /* padding: 0px 30px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   overflow: scroll;
 }
 main .summary .overfiew {
   box-sizing: border-box;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0 62px;
 }
-main .summary .title {
+main .summary .overfiew .title {
   box-sizing: border-box;
   width: 100%;
   padding: 22px 0;
-  font-weight: 800;
+  font-weight: 400;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -94,16 +102,16 @@ main .summary .title {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
-main .summary .title span {
-  font-weight: 400;
+main .summary .overfiew .title .bold {
+  font-weight: 800;
 }
-main .summary .description {
+main .summary .overfiew .description {
   box-sizing: border-box;
   width: 100%;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
 }
-main .summary .version {
+main .summary .overfiew .version {
   box-sizing: border-box;
   width: 100%;
   font-weight: 800;
@@ -111,7 +119,7 @@ main .summary .version {
   text-align: left;
   margin-top: 44px;
 }
-main .summary .listDetailVersion {
+main .summary .overfiew .listDetailVersion {
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -121,7 +129,7 @@ main .summary .listDetailVersion {
   margin-top: 8px;
   margin-bottom: 44px;
 }
-main .summary .listDetailVersion li {
+main .summary .overfiew .listDetailVersion li {
   box-sizing: border-box;
   width: 100%;
   font-size: 18px;
@@ -129,7 +137,7 @@ main .summary .listDetailVersion li {
   font-family: "Roboto", sans-serif;
   margin-left: 64px;
 }
-main .summary .titleInstalation {
+main .summary .overfiew .titleInstalation {
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -140,13 +148,13 @@ main .summary .titleInstalation {
   font-size: 22px;
   font-weight: 500;
 }
-main .summary .titleInstalation p {
+main .summary .overfiew .titleInstalation p {
   box-sizing: border-box;
   width: 100%;
   border-bottom: 1px solid #dedede;
   padding: 8px 0;
 }
-main .summary .steps {
+main .summary .overfiew .steps {
   box-sizing: border-box;
   width: 90%;
   margin-top: 16px;
@@ -158,11 +166,11 @@ main .summary .steps {
   font-family: "Roboto", sans-serif;
   gap: 12px;
 }
-main .summary .steps li {
+main .summary .overfiew .steps li {
   box-sizing: border-box;
   width: 100%;
 }
-main .summary .steps .code {
+main .summary .overfiew .steps .code {
   box-sizing: border-box;
   width: 100%;
   background-color: #f5f5fa;
@@ -173,16 +181,177 @@ main .summary .steps .code {
 main .summary .download {
   box-sizing: border-box;
   width: 100%;
-  height: 500px;
+  min-height: 300px;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0 62px;
-  margin-bottom: 200px;
+}
+main .summary .download .title {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 22px 0;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+main .summary .download .title .bold {
+  font-weight: 800;
+}
+main .summary .download .description {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 36px;
+}
+main .summary .download .wrap {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main .summary .download .wrap .optionFile {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .summary .download .wrap .optionFile select {
+  box-sizing: border-box;
+  width: 70%;
+}
+main .summary .download .wrap .optionFile select option {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+main .summary .download .wrap .optionFile select option:hover {
+  background-color: #dedede;
+}
+main .summary .download .wrap .optionFile p {
+  box-sizing: border-box;
+  width: 30%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+main .summary .download .wrap .informationfile {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 68px;
+}
+main .summary .download .wrap .informationfile .wrap1 {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+main .summary .download .wrap .informationfile .wrap1 button {
+  box-sizing: border-box;
+  padding: 12px 22px;
+  border-radius: 22px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #ce0070;
+  background-color: #ce0070;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+main .summary .download .wrap .informationfile .wrap1 button:hover {
+  background-color: white;
+  color: #ce0070;
+}
+main .summary .download .wrap .informationfile .wrap2 {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: #454a52;
+  gap: 8px;
+}
+main .summary .download .wrap .informationfile .wrap2 a {
+  color: #454a52;
+}
+@media (max-width: 1000px) {
+  main .summary .download {
+    justify-content: flex-start;
+  }
+  main .summary .download .wrap {
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .summary .download .wrap .informationfile {
+    padding: 0 4px;
+  }
+  main .summary .download .wrap .optionFile {
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  main .summary .overfiew .steps {
+    margin-left: 0;
+  }
+  main .summary .overfiew .listDetailVersion li {
+    margin-left: 0;
+  }
 }
 @media (max-width: 560px) {
   main .summary .overfiew {
-    padding: 30px;
+    padding: 0 30px;
   }
-  main .summary .listDetailVersion li {
-    margin-left: 0;
+  main .summary .download {
+    padding: 0 30px;
+  }
+  main .summary .download .wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .summary .download .wrap .informationfile {
+    padding: 0 4px;
+  }
+  main .summary .download .wrap .informationfile .wrap1 {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  main .summary .download .wrap .optionFile {
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  main .summary .download .wrap .informationfile .wrap2 {
+    flex-wrap: wrap;
+  }
+  main .summary .download .wrap .informationfile .wrap2 .hidden {
+    display: none;
   }
   main .summary .steps {
     margin-left: 0;
