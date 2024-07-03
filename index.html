@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/navbar.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,11 +18,18 @@
     <div class="container">
       <header>
         <nav class="navbar">
-          <a href="" class="actif">LogConnector</a>
-          <a href="">License</a>
-          <a href="">Support</a>
-          <a href="">Profile</a>
-          <a href="">Logout</a>
+          <div class="navLink">
+            <i class="ph ph-x toggle"></i>
+            <a href="" class="actif">LogConnector</a>
+            <a href="">License</a>
+            <a href="">Support</a>
+            <a href="">Profile</a>
+            <a href="">Logout</a>
+          </div>
+          <div class="toggle">
+            <img src="img/logo.jpg" alt="Logo" />
+            <i class="ph ph-command"></i>
+          </div>
         </nav>
       </header>
       <main>
@@ -111,5 +119,6 @@ nano license.json
     </div>
 
     <script src="src/js/script.js"></script>
+    <script src="src/js/navbar.js"></script>
   </body>
 </html>
