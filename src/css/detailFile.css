@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main .summary {
+  box-sizing: border-box;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: scroll;
+}
+main .summary .sliders {
+  box-sizing: border-box;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3237;
+  gap: 8px;
+}
+main .summary .sliders .nameFile {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  gap: 8px;
+}
+main .summary .sliders .nameFile img {
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+}
+main .summary .sliders .nameFile p {
+  box-sizing: border-box;
+  width: 85%;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .sliders .slider {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  padding: 4px;
+}
+main .summary .sliders .slider img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+main .summary .detailInformation {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 4px;
+}
+main .summary .detailInformation .wrap1 {
+  box-sizing: border-box;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .summary .detailInformation .wrap1 .buttons {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+  border-bottom: 2px solid #dedede;
+  gap: 8px;
+}
+main .summary .detailInformation .wrap1 .buttons button {
+  box-sizing: border-box;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #808080;
+  cursor: pointer;
+}
+main .summary .detailInformation .wrap1 .buttons button.actif {
+  color: black;
+  border-bottom: 3.5px solid black;
+}
+main .summary .detailInformation .wrap1 .description {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 8px;
+}
+main .summary .detailInformation .wrap1 ul {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+  gap: 4px;
+}
+main .summary .detailInformation .wrap1 ul p {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .detailInformation .wrap1 .description2 {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 32px;
+}
+main .summary .detailInformation .wrap1 .title {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 32px;
+}
+main .summary .detailInformation .wrap1 .version {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 32px;
+}
+main .summary .detailInformation .wrap1 .version span {
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 800;
+  color: #c7c7c7;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .detailInformation .wrap1 .description3 {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .detailInformation .wrap2 {
+  box-sizing: border-box;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 12px;
+}
+main .summary .detailInformation .wrap2 .licensi {
+  margin-bottom: 32px;
+}
+main .summary .detailInformation .wrap2 .licensi .title {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 800;
+  color: #cacaca;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .detailInformation .wrap2 .licensi .description {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  color: #55bfe0;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .detailInformation .wrap2 .category .title {
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 800;
+  color: #cacaca;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .detailInformation .wrap2 .category .description {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2d3237;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .detailInformation .wrap2 .category .description span {
+  color: #55bfe0;
+}
+main .summary .detailInformation .wrap2 .action {
+  box-sizing: border-box;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 12px;
+  background-color: #f1f1f1;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  margin-bottom: 38px;
+}
+main .summary .detailInformation .wrap2 .action a {
+  box-sizing: border-box;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #41d21e;
+  border: 1px solid #5dc542;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  padding: 6px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .detailInformation .wrap2 .version {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 800;
+  color: #cacaca;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 8px;
+}
+main .summary .detailInformation .wrap2 .wrapSelectVersi {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+}
+main .summary .detailInformation .wrap2 .wrapSelectVersi select {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 34px;
+}
