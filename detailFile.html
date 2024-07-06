@@ -128,8 +128,55 @@
                 </div>
               </div>
             </div>
+
             <div class="confcreator">
-              
+              <div class="buttons">
+                <button>Overview</button>
+                <button class="actif">Conf Creator</button>
+              </div>
+              <p class="description">
+                Note: Your provided data is not stored by us and is just a Ui
+                functionality
+              </p>
+              <div class="wrap1">
+                <ul class="type">
+                  <li class="actif">Inputs</li>
+                  <li>Global</li>
+                  <li>Secfret</li>
+                </ul>
+                <ul class="Resource">
+                  <li class="actif">Azure Storage Table</li>
+                  <li>Azure Storage Blob</li>
+                  <li>Azure Audit</li>
+                  <li>Azure Resource</li>
+                  <li>Azure Metrics</li>
+                </ul>
+                <form action="">
+                  <label for="name">
+                    <p><span>*</span>Name</p>
+                    <input type="text" name="name" required />
+                    <p>You can add only one subscription ID for each input.</p>
+                  </label>
+                  <label for="acount">
+                    <p><span>*</span>Azure App Acount</p>
+                    <select name="acount" required>
+                      <option value="">Select</option>
+                      <option value="Instagram">Instagram</option>
+                    </select>
+                  </label>
+                  <label for="subscriptionID">
+                    <p><span>*</span>Subscription ID</p>
+                    <input type="text" name="subscriptionID" required />
+                    <p>You can add only one subscription ID for each input.</p>
+                  </label>
+                  <label for="startTime">
+                    <p><span>*</span>Start Time</p>
+                    <input type="text" name="startTime" required />
+                    <p>You can add only one subscription ID for each input.</p>
+                  </label>
+                  <button>Add</button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -138,4 +185,4 @@
 
     <script src="src/js/navbar.js"></script>
   </body>
-</html
+</html>
