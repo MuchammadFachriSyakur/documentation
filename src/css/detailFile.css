@@ -301,6 +301,92 @@ main .summary .detailInformation .confcreator {
   padding: 24px;
   gap: 4px;
 }
+main .summary .detailInformation .confcreator {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 4px;
+}
+main .summary .detailInformation .confcreator .buttons {
+  box-sizing: border-box;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #dedede;
+  gap: 8px;
+}
+main .summary .detailInformation .confcreator .buttons button {
+  box-sizing: border-box;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #808080;
+  cursor: pointer;
+}
+main .summary .detailInformation .confcreator .buttons button.actif {
+  color: black;
+  border-bottom: 3.5px solid black;
+}
+main .summary .detailInformation .confcreator .description {
+  box-sizing: border-box;
+  width: 70%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .detailInformation .confcreator .wrap1 {
+  box-sizing: border-box;
+  width: 80%;
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+main .summary .detailInformation .confcreator .wrap1 .type {
+  box-sizing: border-box;
+  width: 150px;
+  background-color: #bebfbf;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .detailInformation .confcreator .wrap1 .type li {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 8px;
+}
+main .summary .detailInformation .confcreator .wrap1 .type li.actif {
+  background-color: #41d21e;
+}
+main .summary .detailInformation .confcreator .wrap1 .Resource {
+  box-sizing: border-box;
+  width: 250px;
+  background-color: #ffffff;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+main .summary .detailInformation .confcreator .wrap1 .Resource li {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+}
+main .summary .detailInformation .confcreator .wrap1 .Resource li.actif {
+  background-color: #dedede;
+}
 @media (max-width: 768px) {
   main .summary .detailInformation .overfiew {
     box-sizing: border-box;
