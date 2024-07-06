@@ -347,7 +347,7 @@ main .summary .detailInformation .confcreator .description {
 }
 main .summary .detailInformation .confcreator .wrap1 {
   box-sizing: border-box;
-  width: 80%;
+  width: 100%;
   height: 200px;
   display: flex;
   justify-content: flex-start;
@@ -386,6 +386,95 @@ main .summary .detailInformation .confcreator .wrap1 .Resource li {
 }
 main .summary .detailInformation .confcreator .wrap1 .Resource li.actif {
   background-color: #dedede;
+}
+main .summary .detailInformation .confcreator .wrap1 .formAcount {
+  box-sizing: border-box;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  gap: 12px;
+}
+main .summary .detailInformation .confcreator .wrap1 .formAcount label {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+main .summary .detailInformation .confcreator .wrap1 .formAcount label .name {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  padding: 3.5px 6.5px;
+  font-size: 12px;
+}
+main .summary .detailInformation .confcreator .wrap1 .formAcount label .name span{
+  box-sizing: border-box;
+  color: red; 
+}
+main .summary .detailInformation .confcreator .wrap1 .formAcount label .inputs{
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .summary .detailInformation .confcreator .wrap1 .formAcount label .inputs input{
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+  padding: 3.5px 6.5px;
+  border: 1.5px solid #dedede;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+main .summary .detailInformation .confcreator .wrap1 .formAcount label .inputs p{
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-size: 11px;
+  color: #bebfbf;
+  margin-top: 4px;
+}
+main .summary .detailInformation .confcreator .wrap1 .formAcount label input,main .summary .detailInformation .confcreator .wrap1 .formAcount label select{
+  box-sizing: border-box;
+  width: 50%;
+  background-color: transparent;
+  padding: 3.5px 6.5px;
+  border: 1.5px solid #dedede;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+main .summary .detailInformation .confcreator .wrap1 .formAcount label select{
+  font-size: 14px;
+  color: #bebfbf;
+}
+main .summary .detailInformation .confcreator .wrap1 .formAcount button{
+  box-sizing: border-box;
+  padding: 4px 40px;
+  font-size: 24px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  background-image: linear-gradient(to right,#09a850,#7cc241);
 }
 @media (max-width: 768px) {
   main .summary .detailInformation .overfiew {
