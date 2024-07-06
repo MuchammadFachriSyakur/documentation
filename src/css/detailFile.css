@@ -65,12 +65,21 @@ main .summary .detailInformation {
   box-sizing: border-box;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+main .summary .detailInformation .overfiew {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 24px;
   gap: 4px;
 }
-main .summary .detailInformation .wrap1 {
+main .summary .detailInformation .overfiew .wrap1 {
   box-sizing: border-box;
   width: 70%;
   display: flex;
@@ -78,7 +87,7 @@ main .summary .detailInformation .wrap1 {
   justify-content: flex-start;
   align-items: center;
 }
-main .summary .detailInformation .wrap1 .buttons {
+main .summary .detailInformation .overfiew .wrap1 .buttons {
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -88,7 +97,7 @@ main .summary .detailInformation .wrap1 .buttons {
   border-bottom: 2px solid #dedede;
   gap: 8px;
 }
-main .summary .detailInformation .wrap1 .buttons button {
+main .summary .detailInformation .overfiew .wrap1 .buttons button {
   box-sizing: border-box;
   padding: 10px 24px;
   font-size: 16px;
@@ -100,11 +109,11 @@ main .summary .detailInformation .wrap1 .buttons button {
   color: #808080;
   cursor: pointer;
 }
-main .summary .detailInformation .wrap1 .buttons button.actif {
+main .summary .detailInformation .overfiew .wrap1 .buttons button.actif {
   color: black;
   border-bottom: 3.5px solid black;
 }
-main .summary .detailInformation .wrap1 .description {
+main .summary .detailInformation .overfiew .wrap1 .description {
   box-sizing: border-box;
   width: 100%;
   font-size: 12px;
@@ -112,7 +121,7 @@ main .summary .detailInformation .wrap1 .description {
   font-family: "Roboto", sans-serif;
   margin-bottom: 8px;
 }
-main .summary .detailInformation .wrap1 ul {
+main .summary .detailInformation .overfiew .wrap1 ul {
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -122,14 +131,14 @@ main .summary .detailInformation .wrap1 ul {
   margin-bottom: 28px;
   gap: 4px;
 }
-main .summary .detailInformation .wrap1 ul p {
+main .summary .detailInformation .overfiew .wrap1 ul p {
   box-sizing: border-box;
   width: 100%;
   font-size: 12px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
-main .summary .detailInformation .wrap1 .description2 {
+main .summary .detailInformation .overfiew .wrap1 .description2 {
   box-sizing: border-box;
   width: 100%;
   font-size: 12px;
@@ -137,7 +146,7 @@ main .summary .detailInformation .wrap1 .description2 {
   font-family: "Roboto", sans-serif;
   margin-bottom: 32px;
 }
-main .summary .detailInformation .wrap1 .title {
+main .summary .detailInformation .overfiew .wrap1 .title {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -146,7 +155,7 @@ main .summary .detailInformation .wrap1 .title {
   font-family: "Roboto", sans-serif;
   margin-bottom: 32px;
 }
-main .summary .detailInformation .wrap1 .version {
+main .summary .detailInformation .overfiew .wrap1 .version {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -155,21 +164,21 @@ main .summary .detailInformation .wrap1 .version {
   font-family: "Roboto", sans-serif;
   margin-bottom: 32px;
 }
-main .summary .detailInformation .wrap1 .version span {
+main .summary .detailInformation .overfiew .wrap1 .version span {
   box-sizing: border-box;
   font-size: 14px;
   font-weight: 800;
   color: #c7c7c7;
   font-family: "Roboto", sans-serif;
 }
-main .summary .detailInformation .wrap1 .description3 {
+main .summary .detailInformation .overfiew .wrap1 .description3 {
   box-sizing: border-box;
   width: 100%;
   font-size: 12px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
-main .summary .detailInformation .wrap2 {
+main .summary .detailInformation .overfiew .wrap2 {
   box-sizing: border-box;
   width: 30%;
   display: flex;
@@ -178,24 +187,32 @@ main .summary .detailInformation .wrap2 {
   align-items: flex-start;
   padding: 0 12px;
 }
-main .summary .detailInformation .wrap2 .licensi {
+main .summary .detailInformation .overfiew .wrap2 .licensi {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
   margin-bottom: 32px;
 }
-main .summary .detailInformation .wrap2 .licensi .title {
+main .summary .detailInformation .overfiew .wrap2 .licensi .title {
   text-align: left;
   font-size: 14px;
   font-weight: 800;
   color: #cacaca;
   font-family: "Roboto", sans-serif;
 }
-main .summary .detailInformation .wrap2 .licensi .description {
+main .summary .detailInformation .overfiew .wrap2 .licensi .description {
   text-align: left;
   font-size: 14px;
   font-weight: 400;
   color: #55bfe0;
   font-family: "Roboto", sans-serif;
 }
-main .summary .detailInformation .wrap2 .category .title {
+main .summary .detailInformation .overfiew .wrap2 .category {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+}
+main .summary .detailInformation .overfiew .wrap2 .category .title {
   box-sizing: border-box;
   text-align: left;
   font-size: 14px;
@@ -203,17 +220,17 @@ main .summary .detailInformation .wrap2 .category .title {
   color: #cacaca;
   font-family: "Roboto", sans-serif;
 }
-main .summary .detailInformation .wrap2 .category .description {
+main .summary .detailInformation .overfiew .wrap2 .category .description {
   text-align: left;
   font-size: 14px;
   font-weight: 400;
   color: #2d3237;
   font-family: "Roboto", sans-serif;
 }
-main .summary .detailInformation .wrap2 .category .description span {
+main .summary .detailInformation .overfiew .wrap2 .category .description span {
   color: #55bfe0;
 }
-main .summary .detailInformation .wrap2 .action {
+main .summary .detailInformation .overfiew .wrap2 .action {
   box-sizing: border-box;
   width: 80%;
   display: flex;
@@ -230,7 +247,7 @@ main .summary .detailInformation .wrap2 .action {
   -o-border-radius: 2px;
   margin-bottom: 38px;
 }
-main .summary .detailInformation .wrap2 .action a {
+main .summary .detailInformation .overfiew .wrap2 .action a {
   box-sizing: border-box;
   width: 90%;
   display: flex;
@@ -250,7 +267,7 @@ main .summary .detailInformation .wrap2 .action a {
   font-weight: 600;
   font-family: "Roboto", sans-serif;
 }
-main .summary .detailInformation .wrap2 .version {
+main .summary .detailInformation .overfiew .wrap2 .version {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -260,7 +277,7 @@ main .summary .detailInformation .wrap2 .version {
   font-family: "Roboto", sans-serif;
   margin-bottom: 8px;
 }
-main .summary .detailInformation .wrap2 .wrapSelectVersi {
+main .summary .detailInformation .overfiew .wrap2 .wrapSelectVersi {
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -268,10 +285,33 @@ main .summary .detailInformation .wrap2 .wrapSelectVersi {
   align-items: center;
   padding: 8px;
 }
-main .summary .detailInformation .wrap2 .wrapSelectVersi select {
+main .summary .detailInformation .overfiew .wrap2 .wrapSelectVersi select {
   box-sizing: border-box;
   border: none;
   outline: none;
   cursor: pointer;
   margin-bottom: 34px;
+}
+main .summary .detailInformation .confcreator {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 4px;
+}
+@media (max-width: 768px) {
+  main .summary .detailInformation .overfiew {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  main .summary .detailInformation .overfiew .wrap1,
+  main .summary .detailInformation .overfiew .wrap2 {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  main .summary .detailInformation .overfiew .wrap2 {
+    align-items: center;
+  }
 }
