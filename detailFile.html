@@ -151,30 +151,35 @@
                   <li>Azure Resource</li>
                   <li>Azure Metrics</li>
                 </ul>
-                <form action="">
+                <form action="" method="post" class="formAcount">
                   <label for="name">
-                    <p><span>*</span>Name</p>
-                    <input type="text" name="name" required />
-                    <p>You can add only one subscription ID for each input.</p>
+                    <p class="name"><span>*</span>Name</p>
+                    <div class="inputs">
+                      <input type="text" name="name" required />
+                      <p>Add unique name for the input</p>
+                    </div>
                   </label>
                   <label for="acount">
-                    <p><span>*</span>Azure App Acount</p>
+                    <p class="name"><span>*</span>Azure App Acount</p>
                     <select name="acount" required>
                       <option value="">Select</option>
                       <option value="Instagram">Instagram</option>
                     </select>
                   </label>
                   <label for="subscriptionID">
-                    <p><span>*</span>Subscription ID</p>
-                    <input type="text" name="subscriptionID" required />
-                    <p>You can add only one subscription ID for each input.</p>
+                    <p class="name"><span>*</span>Subscription ID</p>
+                    <div class="inputs">
+                      <input type="text" name="subscriptionID" required />
+                      <p>
+                        You can add only one subscription ID for each input.
+                      </p>
+                    </div>
                   </label>
                   <label for="startTime">
-                    <p><span>*</span>Start Time</p>
+                    <p class="name"><span>*</span>Start Time</p>
                     <input type="text" name="startTime" required />
-                    <p>You can add only one subscription ID for each input.</p>
                   </label>
-                  <button>Add</button>
+                  <button>ADD</button>
                 </form>
               </div>
             </div>
