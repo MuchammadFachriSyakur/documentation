@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="src/css/navbar.css" />
+    <link rel="stylesheet" href="src/css/licensi.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,11 +33,35 @@
         </nav>
       </header>
       <main>
-        <section class="sidebar">
-          <button class="actif">Package</button>
-          <button>Connectors</button>
+        <section class="information">
+          <h1>Licensing</h1>
+          <div class="buttons">
+            <button class="actif">Add license</button>
+            <button>Get Trail License</button>
+            <button>Request Premium/Enterprise License</button>
+          </div>
+          <table class="license">
+            <thead>
+              <tr>
+                <th>Licenses</th>
+                <th>Expiration</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>LogConnector 15 day Trial License</td>
+                <td>Jan 15, 2024, 1:45:39 AM</td>
+                <td>expired</td>
+              </tr>
+              <tr>
+                <td>LogConnector Enterprise License</td>
+                <td>Nov 24, 2024, 1:29:59 PM</td>
+                <td>valid</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
-        <section class="summary"></section>
       </main>
     </div>
 
