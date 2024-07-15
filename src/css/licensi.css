@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .information {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  padding: 32px 48px;
+}
+main .information h1 {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  color: #484d51;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+main .information .buttons {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 20px;
+}
+main .information .buttons button {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #198728;
+  padding: 8px;
+  cursor: pointer;
+}
+main .information .buttons button.actif {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+main .information .license {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+main .information .license thead tr {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #484d51;
+}
