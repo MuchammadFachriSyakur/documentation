@@ -304,12 +304,19 @@ main .summary .detailInformation .confcreator {
 main .summary .detailInformation .confcreator {
   box-sizing: border-box;
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 24px;
   gap: 4px;
+}
+main .summary .detailInformation .confcreator .wrap1 {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 main .summary .detailInformation .confcreator .buttons {
   box-sizing: border-box;
@@ -345,7 +352,7 @@ main .summary .detailInformation .confcreator .description {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
-main .summary .detailInformation .confcreator .wrap1 {
+main .summary .detailInformation .confcreator .wrap2 {
   box-sizing: border-box;
   width: 100%;
   height: 200px;
@@ -353,41 +360,41 @@ main .summary .detailInformation .confcreator .wrap1 {
   justify-content: flex-start;
   align-items: flex-start;
 }
-main .summary .detailInformation .confcreator .wrap1 .type {
+main .summary .detailInformation .confcreator .wrap2 .type {
   box-sizing: border-box;
   width: 150px;
   background-color: #bebfbf;
   list-style: none;
   font-family: "Roboto", sans-serif;
 }
-main .summary .detailInformation .confcreator .wrap1 .type li {
+main .summary .detailInformation .confcreator .wrap2 .type li {
   box-sizing: border-box;
   width: 100%;
   text-align: center;
   color: white;
   padding: 8px;
 }
-main .summary .detailInformation .confcreator .wrap1 .type li.actif {
+main .summary .detailInformation .confcreator .wrap2 .type li.actif {
   background-color: #41d21e;
 }
-main .summary .detailInformation .confcreator .wrap1 .Resource {
+main .summary .detailInformation .confcreator .wrap2 .Resource {
   box-sizing: border-box;
   width: 250px;
   background-color: #ffffff;
   list-style: none;
   font-family: "Roboto", sans-serif;
 }
-main .summary .detailInformation .confcreator .wrap1 .Resource li {
+main .summary .detailInformation .confcreator .wrap2 .Resource li {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   color: rgb(0, 0, 0);
   padding: 8px;
 }
-main .summary .detailInformation .confcreator .wrap1 .Resource li.actif {
+main .summary .detailInformation .confcreator .wrap2 .Resource li.actif {
   background-color: #dedede;
 }
-main .summary .detailInformation .confcreator .wrap1 .formAcount {
+main .summary .detailInformation .confcreator .wrap2 .formAcount {
   box-sizing: border-box;
   width: 80%;
   display: flex;
@@ -397,7 +404,7 @@ main .summary .detailInformation .confcreator .wrap1 .formAcount {
   font-family: "Roboto", sans-serif;
   gap: 12px;
 }
-main .summary .detailInformation .confcreator .wrap1 .formAcount label {
+main .summary .detailInformation .confcreator .wrap2 .formAcount label {
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -405,7 +412,7 @@ main .summary .detailInformation .confcreator .wrap1 .formAcount label {
   align-items: flex-start;
   gap: 8px;
 }
-main .summary .detailInformation .confcreator .wrap1 .formAcount label .name {
+main .summary .detailInformation .confcreator .wrap2 .formAcount label .name {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -414,11 +421,19 @@ main .summary .detailInformation .confcreator .wrap1 .formAcount label .name {
   padding: 3.5px 6.5px;
   font-size: 12px;
 }
-main .summary .detailInformation .confcreator .wrap1 .formAcount label .name span{
+main
+  .summary
+  .detailInformation
+  .confcreator
+  .wrap2
+  .formAcount
+  label
+  .name
+  span {
   box-sizing: border-box;
-  color: red; 
+  color: red;
 }
-main .summary .detailInformation .confcreator .wrap1 .formAcount label .inputs{
+main .summary .detailInformation .confcreator .wrap2 .formAcount label .inputs {
   box-sizing: border-box;
   width: 50%;
   display: flex;
@@ -426,7 +441,15 @@ main .summary .detailInformation .confcreator .wrap1 .formAcount label .inputs{
   justify-content: center;
   align-items: center;
 }
-main .summary .detailInformation .confcreator .wrap1 .formAcount label .inputs input{
+main
+  .summary
+  .detailInformation
+  .confcreator
+  .wrap2
+  .formAcount
+  label
+  .inputs
+  input {
   box-sizing: border-box;
   width: 100%;
   background-color: transparent;
@@ -438,7 +461,15 @@ main .summary .detailInformation .confcreator .wrap1 .formAcount label .inputs i
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-main .summary .detailInformation .confcreator .wrap1 .formAcount label .inputs p{
+main
+  .summary
+  .detailInformation
+  .confcreator
+  .wrap2
+  .formAcount
+  label
+  .inputs
+  p {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -446,7 +477,8 @@ main .summary .detailInformation .confcreator .wrap1 .formAcount label .inputs p
   color: #bebfbf;
   margin-top: 4px;
 }
-main .summary .detailInformation .confcreator .wrap1 .formAcount label input,main .summary .detailInformation .confcreator .wrap1 .formAcount label select{
+main .summary .detailInformation .confcreator .wrap2 .formAcount label input,
+main .summary .detailInformation .confcreator .wrap2 .formAcount label select {
   box-sizing: border-box;
   width: 50%;
   background-color: transparent;
@@ -458,11 +490,11 @@ main .summary .detailInformation .confcreator .wrap1 .formAcount label input,mai
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-main .summary .detailInformation .confcreator .wrap1 .formAcount label select{
+main .summary .detailInformation .confcreator .wrap2 .formAcount label select {
   font-size: 14px;
   color: #bebfbf;
 }
-main .summary .detailInformation .confcreator .wrap1 .formAcount button{
+main .summary .detailInformation .confcreator .wrap2 .formAcount button {
   box-sizing: border-box;
   padding: 4px 40px;
   font-size: 24px;
@@ -474,7 +506,7 @@ main .summary .detailInformation .confcreator .wrap1 .formAcount button{
   border: none;
   outline: none;
   color: white;
-  background-image: linear-gradient(to right,#09a850,#7cc241);
+  background-image: linear-gradient(to right, #09a850, #7cc241);
 }
 @media (max-width: 768px) {
   main .summary .detailInformation .overfiew {
