@@ -10,6 +10,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 main .information {
   box-sizing: border-box;
@@ -68,4 +69,128 @@ main .information .license thead tr {
   width: 100%;
   font-family: "Roboto", sans-serif;
   color: #484d51;
+}
+.addLicense {
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: rgb(255, 255, 255, 0.8);
+  gap: 8px;
+}
+.addLicense form {
+  box-sizing: border-box;
+  width: 350px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  padding: 16px 20px;
+  gap: 8px;
+}
+.addLicense form .head {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.addLicense form .head .heading {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.addLicense form .head .close {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: right;
+  font-size: 36px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.addLicense form label {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1.25px solid #d3d3d3;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.addLicense form select {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1.25px solid #d3d3d3;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 12px;
+}
+.addLicense form label input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.addLicense form label .message {
+  box-sizing: border-box;
+  display: none;
+  padding: 6px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 400;
+  color: red;
+}
+.addLicense form button {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.25px solid #d3d3d3;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 12px;
+  cursor: pointer;
 }
