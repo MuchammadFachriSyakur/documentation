@@ -13,6 +13,28 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/icon/site.webmanifest" />
   </head>
   <body>
     <div class="container">
@@ -23,7 +45,7 @@
             <a href="index.html">LogConnector</a>
             <a href="licensi.html" class="actif">License</a>
             <a href="">Support</a>
-            <a href="">Profile</a>
+            <a href="profile.html">Profile</a>
             <a href="">Logout</a>
           </div>
           <div class="toggle">
@@ -65,6 +87,69 @@
       </main>
     </div>
 
+    <section class="addLicense">
+      <form action="" method="post">
+        <div class="head">
+          <span class="close">&times;</span>
+          <span class="heading">Star Your Enterprise</span>
+        </div>
+        <label for="email">
+          <input
+            type="email"
+            name="email"
+            placeholder="Businnes Email"
+            required
+          />
+          <p class="message">Required</p>
+        </label>
+        <label for="password">
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </label>
+        <label for="firstName">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+          <p class="message">Required</p>
+        </label>
+        <label for="lastName">
+          <input type="text" name="lastName" placeholder="Last Name" required />
+          <p class="message">Required</p>
+        </label>
+        <label for="jobTitle">
+          <input type="text" name="jobTitle" placeholder="Job Title" required />
+          <p class="message">Required</p>
+        </label>
+        <label for="phoneNumber">
+          <input
+            type="number"
+            name="phoneNumber"
+            placeholder="Phone Number"
+            required
+          />
+          <p class="message">Required</p>
+        </label>
+        <label for="Company">
+          <input type="text" name="Company" placeholder="Company" required />
+          <p class="message">Required</p>
+        </label>
+        <select name="country">
+          <option value="India">India</option>
+          <option value="America">America</option>
+          <option value="China">China</option>
+        </select>
+        <button type="submit" name="submitForm">Submit</button>
+      </form>
+    </section>
+
     <script src="src/js/navbar.js"></script>
+    <script src="src/js/licensi.js"></script>
   </body>
 </html>
