@@ -69,8 +69,8 @@
             <div class="overfiew">
               <div class="wrap1">
                 <div class="buttons">
-                  <button class="actif">Overview</button>
-                  <button>Conf Creator</button>
+                  <button data-value="Overview" class="actif">Overview</button>
+                  <button data-value="confcreator">Conf Creator</button>
                 </div>
                 <p class="description">
                   The LogConnector for Microsoft 365 provides dashboard for
@@ -130,15 +130,19 @@
             </div>
 
             <div class="confcreator">
-              <div class="buttons">
-                <button>Overview</button>
-                <button class="actif">Conf Creator</button>
+              <div class="wrap1">
+                <div class="buttons">
+                  <button data-value="Overview">Overview</button>
+                  <button data-value="confcreator" class="actif">
+                    Conf Creator
+                  </button>
+                </div>
               </div>
               <p class="description">
                 Note: Your provided data is not stored by us and is just a Ui
                 functionality
               </p>
-              <div class="wrap1">
+              <div class="wrap2">
                 <ul class="type">
                   <li class="actif">Inputs</li>
                   <li>Global</li>
@@ -188,6 +192,7 @@
       </main>
     </div>
 
+    <script src="src/js/detailFile.js"></script>
     <script src="src/js/navbar.js"></script>
   </body>
 </html>
